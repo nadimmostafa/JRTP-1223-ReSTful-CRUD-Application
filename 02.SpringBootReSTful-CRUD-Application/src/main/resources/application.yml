@@ -1,0 +1,18 @@
+#port number
+server:
+  port: 8282
+
+#Database configuration
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: Oracle
+    
+# JPA configuration
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
